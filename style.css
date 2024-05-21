@@ -115,10 +115,29 @@ input[clas~=class3]{ /* Busca el valor dentro de un conjunto de valores */
 
 }
 
+.only-print {
+    display: none;
+}
+
+/* @media print {
+    .only-print {
+        display: block;
+    }
+} */
 
 
+@media screen and (max-width: 500px){
+    body {
+        background-color: green;
+    }
+}
 
 
+@media screen and (min-width: 501px) and (max-width: 768px){
+    body {
+        background-color: cadetblue;
+    }
+}
 
 
 
