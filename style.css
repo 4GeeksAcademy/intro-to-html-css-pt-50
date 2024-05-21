@@ -1,0 +1,157 @@
+/* 
+Sintaxis:
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+/* Selector de Etiqueta */
+body {
+    margin: 0;
+}
+
+/* Selector de ID */
+#home {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Selector de Clase */
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
+
+.caja {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    display: flex;
+}
+
+
+/* Selector Descendiente */
+.box .box-left {
+    color: blue;
+    width: 100px;
+    float: left;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+.box .box-right {
+    color: blue;
+    width: 100px;
+    float: right;
+    height: 100px;
+    background-color:chocolate ;
+}
+
+.caja .caja-left {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+
+.caja .caja-right {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+/* #home .box-left {
+    color: red;
+}
+ */
+
+ /* Selector Hijo (>)*/
+.box > .box-left {
+    color: violet;
+}
+
+/* Selector Adyacente (+)*/
+.comments > h3 + p, .comments > h3 + span {
+    color: blueviolet;
+}
+
+/* Selector Hermano (~) */
+.comments > h3 ~ p {
+    color: brown;
+}
+
+/* Selector de Atributo */
+input[type]{ /* Busca que el atributo este presente en el elemento indicado */
+    border: 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 3px;
+    display: block;
+}
+
+input[type=text]{
+    background-color: gray;
+}
+
+input[type=email]{ /* Busca el patron sea igual del valor asignado */
+    background-color: gray;
+}
+
+input[class*=input]{ /* Busca el patron contenido dentro del valor asignado */
+
+}
+
+input[class^=input]{ /* Busca el patron al inicio del valor asignado */
+
+}
+
+input[class$=input]{ /* Busca el patron al final del valor asignado */
+
+}
+
+input[clas~=class3]{ /* Busca el valor dentro de un conjunto de valores */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Selector Universal */
+/* * {
+    border: 1px solid #000000;
+    margin: 3px;
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    background-color: green;
+}
+
+div {
+    background-color: red;
+}
+
+a {
+    background-color: blanchedalmond;
+} */
